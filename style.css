@@ -1,3 +1,22 @@
 body {
-  background-color: peru;
+  /* background-color: rgb(73, 73, 73); */
+}
+
+.animal {
+  animation: dance .5s cubic-bezier(0.19, 1, 0.22, 1) infinite alternate;
+}
+
+.blurry {
+  filter: blur(5px) brightness(0);
+  font-size: 68px;
+}
+
+@keyframes dance {
+  0% {
+    transform: translate(-5px);
+  }
+
+  100% {
+    transform: translate(5px);
+  }
 }

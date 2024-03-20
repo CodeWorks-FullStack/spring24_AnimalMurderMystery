@@ -13,10 +13,49 @@
 
 <body>
   <header class="bg-black p-2 fw-bold text-center">
-    <h1 class="text-warning">Animal Party </h1>
+    <h1 class="text-warning">Animal Murder Party 🔪 </h1>
     <marquee>🦒🐀🐅🦌</marquee>
   </header>
 
+  <main class="container">
+    <section class="row">
+      <h2 id="animal-party" class="animal text-center">
+        <!-- animals will draw here -->
+      </h2>
+    </section>
+
+    <section class="row" onmouseleave="drawEverything()">
+      <!-- <button onmouseenter="drawEverything()" class="col-3 btn btn-primary">
+        All
+      </button> -->
+      <button onmouseenter="drawDesertAnimals()" class="col-3 btn btn-danger">
+        🌵 Desert
+      </button>
+      <button onmouseenter="drawMountainAnimals()" class="col-3 btn btn-secondary">
+        ⛰️ Mountain
+      </button>
+      <button onmouseenter="drawAnimalsByHabitat('jungle')" class="col-3 btn btn-success">🌳 Jungle</button>
+      <button onmouseenter="drawAnimalsByHabitat('volcanic')" class="col-3 btn btn-success">🌋 Volcanic</button>
+
+      <button onmouseenter="drawAnimalsByDiet('grass')" class="col-3 btn btn-info"> 🌾 Grass</button>
+      <button onmouseenter="drawAnimalsByDiet('meat')" class="col-3 btn btn-danger"> 🍖 Meat</button>
+      <button onmouseenter="drawAnimalsByDiet('leaves')" class="col-3 btn btn-warning">🌿 Leaves</button>
+      <button onmouseenter="drawAnimalsByDiet('sugarcane')" class="col-3 btn btn-light">🍭 sugarcane</button>
+      <button onmouseenter="drawAnimalsByDiet('fruit')" class="col-3 btn btn-dark">🍎 fruit</button>
+      <button onmouseenter="drawFilteredAnimalsByAnything('feature','arms')" class="col-3 btn btn-outline-dark">💪
+        Arms</button>
+      <button onmouseenter="drawFilteredAnimalsByAnything('feature','long neck')" class="col-3 btn btn-outline-dark">🧣
+        Long Neck</button>
+      <button onmouseenter="drawFilteredAnimalsByAnything('feature','teeth')" class="col-3 btn btn-outline-dark">😬
+        Teeth</button>
+    </section>
+    <section class="row">
+      <div id="clues" class="col-12">
+
+      </div>
+      <button onclick="accuseKiller()" class="btn btn-primary"> Accuse 🔍</button>
+    </section>
+  </main>
 
   <script src="app.js"></script>
 </body>
